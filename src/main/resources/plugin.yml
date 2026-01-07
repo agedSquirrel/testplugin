@@ -4,3 +4,8 @@ main: me.squirrly.pluginyay.Pluginyay
 description: yes, this is meant to be a description
 author: AgedSquirrel
 api-version: '1.21'
+
+commands:
+  hello:
+    description: Say Hello to someone idk who
+    usage: /hello

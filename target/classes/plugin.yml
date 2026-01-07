@@ -1,5 +1,6 @@
 name: pluginyay
-version: '1.0-SNAPSHOT'
+version: 0.1.0
 main: me.squirrly.pluginyay.Pluginyay
+description: yes, this is meant to be a description
+author: AgedSquirrel
 api-version: '1.21'
-prefix: test plugin

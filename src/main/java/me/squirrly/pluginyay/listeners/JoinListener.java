@@ -4,10 +4,12 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+
 public class JoinListener implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        event.getPlayer().sendMessage("Welcome! Thanks for joining %player%.");
+        var player = event.getPlayer();
+        event.getPlayer().sendMessage("Welcome! Thanks for joining " + player.getName() + "!");
     }
 }

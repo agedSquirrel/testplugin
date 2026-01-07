@@ -7,7 +7,7 @@ public final class Pluginyay extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        getLogger().warning("Hehehe it works :))");
+        getLogger().warning("Hehehe it works :)");
     }
 
     @Override

@@ -1,19 +1,17 @@
 package me.squirrly.pluginyay.data;
 
+import me.squirrly.pluginyay.Pluginyay;
 import org.bukkit.NamespacedKey;
-import org.bukkit.plugin.Plugin;
 
-/**
- * Centralized player tag keys (Player/Entity PDC).
- */
 public final class PlayerTags {
-    public final NamespacedKey CLASS;
-    public final NamespacedKey LEVEL;
-    public final NamespacedKey XP_POINTS;
+    public static final NamespacedKey CLASS;
+    public static final NamespacedKey LEVEL;
+    public static final NamespacedKey XP_POINTS;
 
-    public PlayerTags(Plugin plugin) {
-        CLASS = new NamespacedKey(plugin, "class");     // STRING
-        LEVEL  = new NamespacedKey(plugin, "level");      // STRING
-        XP_POINTS = new NamespacedKey(plugin, "xp_points");          // INTEGER
+    static {
+        Pluginyay plugin = Pluginyay.getPlugin();
+        CLASS = new NamespacedKey(plugin, "class");
+        LEVEL  = new NamespacedKey(plugin, "level");
+        XP_POINTS = new NamespacedKey(plugin, "xp_points");
     }
 }

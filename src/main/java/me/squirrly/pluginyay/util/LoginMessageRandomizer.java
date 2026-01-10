@@ -2,8 +2,8 @@ package me.squirrly.pluginyay.util;
 
 import java.lang.Math;
 
-public final class WelcomeRandomizerMessage {
-    public static String welcomeMessage(String name) {
+public final class LoginMessageRandomizer {
+    public static String loginMessage(String name) {
         int greetOption = (int)(Math.random()*3)+1;
         if (greetOption == 1) {
             return "Hello " + name + "!";

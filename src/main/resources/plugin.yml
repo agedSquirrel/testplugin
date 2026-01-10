@@ -7,5 +7,8 @@ api-version: '1.21'
 
 commands:
   hello:
-    description: Say Hello to someone idk who
+    description: Say hello to yourself (for loners)
     usage: /hello
+  rpgitems:
+    description: Make rpg items! (if this works) (yip yip hooray)
+    usage: /rpgitems
